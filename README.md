@@ -53,7 +53,7 @@
     Пример содержания файла `.env`:
     ```env
     SECRET_KEY=your-secret-key-here
-    ALLOWED_HOSTS=host1,host2
+    ALLOWED_HOSTS=localhost,127.0.0.1
     ```
 
     Если нет файла `.env`, создайте его вручную или используйте шаблон.
