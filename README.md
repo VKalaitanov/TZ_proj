@@ -19,46 +19,58 @@
 
 ### Шаги для запуска
 
-1. Клонируйте репозиторий:
+1. **Клонируйте репозиторий:**
 
     ```bash
     git clone https://github.com/Vkalaitanov/TZ_proj.git
     cd TZ_proj
     ```
 
-2. Создайте и активируйте виртуальное окружение:
+2. **Создайте и активируйте виртуальное окружение:**
 
-    Для Linux/MacOS:
+    Для **Linux/MacOS**:
     ```bash
     python3 -m venv venv
     source venv/bin/activate
     ```
 
-    Для Windows:
+    Для **Windows**:
     ```bash
     python3 -m venv venv
     venv\Scripts\activate
     ```
 
-3. Установите зависимости:
+3. **Установите зависимости:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Выполните миграции:
+4. **Создайте файл `.env` в корне проекта:**
+
+    В этом файле нужно хранить важные переменные окружения, такие как настройки базы данных, секретные ключи и другие конфиденциальные данные.
+
+    Пример содержания файла `.env`:
+    ```env
+    SECRET_KEY=your-secret-key-here
+    ALLOWED_HOSTS=host1,host2
+    ```
+
+    Если нет файла `.env`, создайте его вручную или используйте шаблон.
+
+5. **Выполните миграции:**
 
     ```bash
     python manage.py migrate
     ```
 
-5. Запустите сервер:
+6. **Запустите сервер:**
 
     ```bash
     python manage.py runserver
     ```
 
-6. Откройте API в браузере:
+7. **Откройте API в браузере:**
 
     - Админ-панель: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
     - Документация API (Swagger): [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
