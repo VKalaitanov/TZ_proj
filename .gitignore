@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env
+*.env
+
+# Django
+/db.sqlite3
+/media/
+/static/
+
+# Migrations
+**/migrations/*
+!**/migrations/__init__.py
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.iml
+
+# Логи и дампы
+logs/
+*.log
+*.sql
+
+# Другие временные файлы
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
